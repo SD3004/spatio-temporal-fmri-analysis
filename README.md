@@ -1,12 +1,5 @@
-# spatio-temporal-fmri-analysis
+# Spatio-Temporal Deep Learing for fMRI analysis
 
-# Structure
-
-/data
-    /prepare_data
-
+# Useful Links
 
 # Results
-
-
-w/o weighting btw classes
