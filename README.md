@@ -1,4 +1,4 @@
-# Spatio-Temporal Deep Learing for fMRI analysis
+# Spatio-Temporal Deep Learning for fMRI analysis
 
 ## Dataset
 
