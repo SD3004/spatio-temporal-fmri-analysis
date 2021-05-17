@@ -11,3 +11,15 @@ To visualise experiments logs in tensorbard run the following line:
 ## Useful Links
 
 ## Results
+
+### Sex prediction 
+
+|  | Train-accuracy | Train-validation |
+| ---      |  ------  |----------|
+| ICA15   | xxx   | xxx  |
+| ICA25   | xxx   | xxx  |
+| ICA50   | xxx   | xxx  |
+| ICA100   | xxx   | xxx  |
+| ICA200   | xxx   | xxx  |
+| ICA300   | xxx   | xxx  |
+
