@@ -14,6 +14,9 @@ To visualise experiments logs in tensorbard run the following line:
 
 ### Sex prediction 
 
+Multi-layer Perceptron classifier
+
+
 |  | Train-accuracy | Validation-accuracy |
 | ---      |  ------  |----------|
 | ICA15   | xxx   | xxx  |
