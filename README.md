@@ -2,6 +2,9 @@
 
 ## Dataset
 
+![alt text](img/connectivity.png "ICA_15 network matrix")
+
+
 ## Tensorboard
 
 To visualise experiments logs in tensorbard run the following line:
