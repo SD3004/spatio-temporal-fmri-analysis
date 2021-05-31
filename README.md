@@ -13,11 +13,11 @@ To visualise experiments logs in tensorbard run the following line:
 
 ## Useful Links
 
-Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MRI Analysis](https://github.com/sgadgil6/cnslab_fmri)
+ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MRI Analysis](https://github.com/sgadgil6/cnslab_fmri)
 
 ## Results
 
-### Sex prediction 
+### Sex classification 
 
 Multi-layer Perceptron (MLP) classifier
 
