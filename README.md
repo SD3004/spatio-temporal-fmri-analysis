@@ -25,8 +25,8 @@ Multi-layer Perceptron (MLP) classifier
 
 
 | Model | Data | Input Features | Architecture | Train-accuracy | Validation-accuracy | Remarks |
-| ---      |  ----| --  | ----------| ----------| ----------| --- |
-| ST-GCN | cov mat ts - **22** ROIs  | 253 |  (64,64,1)  | **0.828**  | **0.752** | 5-folds average, SGD 1e-2 |
+| ------ |  ----| --  | ----------| ----------| ----------| --- |
+| ST-GCN | cov matrix - **22** ROIs  | 253 |  (64,64,1)  | **0.828**  | **0.752** | 5-folds average, SGD 1e-2 |
 | ours   | ICA15   | 105 |(64,64,1)   | **1.00**   | **0.847**  | dropout 0.5, Adam 1e-4 | 
 | ours   | ICA25   | 300 | (64,64,1)   | **1.00**    | **0.835**  |  same |
 | ours   | ICA50   | 1225 | (64,64,1)   | **1.00**    | **0.902**  | same | 
