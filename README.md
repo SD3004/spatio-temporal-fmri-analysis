@@ -24,15 +24,15 @@ Multi-layer Perceptron (MLP) classifier
 
 
 
-| Model | Data | Architecture | Train-accuracy | Validation-accuracy | Remarks |
-| ---      |  ------  | ----------| ----------| ----------| --- |
-| ST-GCN | cov mat ts - 22 ROIs  |  (64,64,1)  | **0.828**  | **0.752** | 5-folds average |
-| ours   | ICA10   | xxx  | xxx   | xxx  | xxx | 
-| ours   | ICA25   | xxx  | xxx   | xxx  |  xxx |
-| ours   | ICA50   | xxx  | xxx   | xxx  | xxx | 
-| ours   | ICA100   | xxx  | xxx   | xxx  | xxx | 
-| ours   | ICA200   | xxx  | xxx   | xxx  | xxx|
-| ours   | ICA300   | xxx  | xxx   | xxx  | xxx|
+| Model | Data | Input Features | Architecture | Train-accuracy | Validation-accuracy | Remarks |
+| ---      |  ----| --  | ----------| ----------| ----------| --- |
+| ST-GCN | cov mat ts - **22** ROIs  | 253 |  (64,64,1)  | **0.828**  | **0.752** | 5-folds average, SGD 1e-2 |
+| ours   | ICA15   | 105 |(64,64,1)   | **1.00**   | **0.847**  | dropout 0.5, Adam 1e-4 | 
+| ours   | ICA25   | 300 | (64,64,1)   | **1.00**    | **0.835**  |  same |
+| ours   | ICA50   | 1225 | (64,64,1)   | **1.00**    | **0.902**  | same | 
+| ours   | ICA100   | 4950 | (64,64,1)   | **1.00**    | **0.961**  | same | 
+| ours   | ICA200   | 19900 | (64,64,1)   | **1.00**    | **0.957**  | same |
+| ours   | ICA300   | 44850 | (64,64,1)   | **1.00**    | **0.968**  | same |
 
 
 ### Fluid intelligence prediction 
