@@ -24,15 +24,15 @@ Multi-layer Perceptron (MLP) classifier
 
 
 
-| Model | Data | Architecture | Train-accuracy | Validation-accuracy |
-| ---      |  ------  | ----------| ----------| ----------| 
-| ST-GCN | xxx   | xxx  | xxx   | xxx  | 
-| ours   | ICA10   | xxx  | xxx   | xxx  | 
-| ours   | ICA25   | xxx  | xxx   | xxx  | 
-| ours   | ICA50   | xxx  | xxx   | xxx  | 
-| ours   | ICA100   | xxx  | xxx   | xxx  | 
-| ours   | ICA200   | xxx  | xxx   | xxx  | 
-| ours   | ICA300   | xxx  | xxx   | xxx  | 
+| Model | Data | Architecture | Train-accuracy | Validation-accuracy | Remarks |
+| ---      |  ------  | ----------| ----------| ----------| --- |
+| ST-GCN | cov mat ts - 22 ROIs  |  (64,64,1)  | **0.828**  | **0.752** | 5-folds average |
+| ours   | ICA10   | xxx  | xxx   | xxx  | xxx | 
+| ours   | ICA25   | xxx  | xxx   | xxx  |  xxx |
+| ours   | ICA50   | xxx  | xxx   | xxx  | xxx | 
+| ours   | ICA100   | xxx  | xxx   | xxx  | xxx | 
+| ours   | ICA200   | xxx  | xxx   | xxx  | xxx|
+| ours   | ICA300   | xxx  | xxx   | xxx  | xxx|
 
 
 ### Fluid intelligence prediction 
