@@ -41,6 +41,9 @@ class dataLoaderICA():
 
         # create two arrays X, y 
 
+        if self.label == 'fluid_intelligence':
+            df = df.dropna(axis=0)
+
         X = df.iloc[:,:-2].values
         y = df[self.label].values
 
@@ -49,7 +52,8 @@ class dataLoaderICA():
                                                         y,
                                                         test_size=0.2,
                                                         random_state=random_seed, 
-                                                        stratify=y)
+                                                        #stratify=y,
+                                                        )
         print('shape X train {} , y train {}'.format(X_train.shape, y_train.shape))
         print('shape X val {} , y val {}'.format(X_val.shape, y_val.shape))
 

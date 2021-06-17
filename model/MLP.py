@@ -11,7 +11,8 @@ class MLP(nn.Module):
 
     def __init__(self,input_size,
                       hidden_size = [1024,512,32], 
-                      dropout=0.5):
+                      dropout=0.5,
+                      bias=False):
 
         super(MLP,self).__init__()
 
@@ -19,16 +20,17 @@ class MLP(nn.Module):
         self.hidden_size = hidden_size
         self.dropout = dropout
         self.num_linear = len(hidden_size)
+        self.bias = bias
 
         ## fully connected layers
         self.fc_layers = torch.nn.ModuleDict()
 
-        self.fc_layers['fc_layer_0'] = nn.Linear(self.input_size, self.hidden_size[0])
+        self.fc_layers['fc_layer_0'] = nn.Linear(self.input_size, self.hidden_size[0], bias=self.bias)
         for i in range(self.num_linear-1):
-            self.fc_layers[f'fc_layer_{i+1}'] = nn.Linear(self.hidden_size[i],self.hidden_size[i+1])
+            self.fc_layers[f'fc_layer_{i+1}'] = nn.Linear(self.hidden_size[i],self.hidden_size[i+1], bias=self.bias)
         
         ## classification layer
-        self.fc_class = nn.Linear(self.hidden_size[-1],1)
+        self.fc_class = nn.Linear(self.hidden_size[-1],1 , bias=self.bias)
 
         if self.dropout:
             self.dropout = nn.Dropout(self.dropout)
