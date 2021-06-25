@@ -11,6 +11,10 @@ To visualise experiments logs in tensorbard run the following line:
 
 ``` tensorboard --logdir='./logs/' ```
 
+## Docker 
+
+``` docker run -it --rm --env CUDA_VISIBLE_DEVICE=0 -v /home/sd20/workspace:/workspace -v /home/sd20/workspace/data:/data/ --workdir=/workspace  pytorch/pytorch ```
+
 ## Useful Links
 
 ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MRI Analysis](https://github.com/sgadgil6/cnslab_fmri)
