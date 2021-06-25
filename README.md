@@ -13,7 +13,12 @@ To visualise experiments logs in tensorbard run the following line:
 
 ## Docker 
 
-``` docker run -it --rm --env CUDA_VISIBLE_DEVICE=0 -v /home/sd20/workspace:/workspace -v /home/sd20/workspace/data:/data/ --workdir=/workspace  pytorch/pytorch ```
+```docker build ./config```
+
+``` docker run -it --rm --env CUDA_VISIBLE_DEVICE=0 --gpus all -v /home/sd20/workspace:/workspace -v /home/sd20/workspace/data:/data/ --workdir=/workspace  stgcn```
+
+``` docker tag 267a0d195121 stgcn ```
+
 
 ## Useful Links
 
