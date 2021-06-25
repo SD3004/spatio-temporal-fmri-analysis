@@ -51,8 +51,8 @@ ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MR
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | ST-GCN | **22 ROIs**  | **0.752** | 5-folds average, SGD 1e-2 | xxx | xxx | xxx |
 | MS-G3D   | **22 ROIs**    |**0.847**  | dropout 0.5, Adam 1e-4 | xxx | xxx |xxx |
-| ST-GCN   | Nodes TS - 15   | **0.835**  |  same | xxx | xxx |xxx |
-| ST-GCN   | Nodes TS - 25       | **0.902**  | same | xxx | xxx |xxx |
+| ST-GCN   | Nodes TS - 15   | **79.8**  |  512 | 10k | 50 | Adam, 1e-3  |
+| ST-GCN   | Nodes TS - 25       | **82.1**  | 512 | 10k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 50      | **0.961**  | same | xxx | xxx |xxx |
 | ST-GCN   | Nodes TS - 100      | **82.6**  | 256 | 2k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 200       | **89.2**  | 256 | 2k | 50 | Adam, 1e-3  |
