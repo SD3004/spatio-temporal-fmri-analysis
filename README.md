@@ -19,9 +19,7 @@ ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MR
 
 ### Sex classification 
 
-Multi-layer Perceptron (MLP) classifier
-
-
+**Multi-layer Perceptron** (MLP) classifier
 
 
 | Model | Data | Input Features | Architecture | Train-accuracy | Validation-accuracy | Remarks |
@@ -33,6 +31,24 @@ Multi-layer Perceptron (MLP) classifier
 | ours   | ICA100   | 4950 | (64,64,1)   | **1.00**    | **0.961**  | same | 
 | ours   | ICA200   | 19900 | (64,64,1)   | **1.00**    | **0.957**  | same |
 | ours   | ICA300   | 44850 | (64,64,1)   | **1.00**    | **0.968**  | same |
+
+
+------
+
+** Graph Convolution Networks** (GCN) classifiers
+
+
+| Model | Data |  Accuracy (paper)| Batch size | Epochs | Remarks |
+| ------ |  ----| --  | ----------|  ----------|   ----------|
+| ST-GCN | **22 ROIs**  | **0.752** | 5-folds average, SGD 1e-2 | xxx | xxx |
+| MS-G3D   | **22 ROIs**    |**0.847**  | dropout 0.5, Adam 1e-4 | xxx | xxx |
+| ST-GCN   | Nodes TS - 15   | **0.835**  |  same | xxx | xxx |
+| ST-GCN   | Nodes TS - 25       | **0.902**  | same | xxx | xxx |
+| ST-GCN   | Nodes TS - 50      | **0.961**  | same | xxx | xxx |
+| ST-GCN   | Nodes TS - 100      | **0.957**  | same | xxx | xxx |
+| ST-GCN   | Nodes TS - 200       | **0.968**  | same | xxx | xxx |
+| ST-GCN   | Nodes TS - 300       | **0.968**  | same | xxx | xxx |
+
 
 
 ### Fluid intelligence prediction 
