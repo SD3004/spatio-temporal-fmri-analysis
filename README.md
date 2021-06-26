@@ -24,11 +24,13 @@ To visualise experiments logs in tensorbard run the following line:
 
 ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MRI Analysis](https://github.com/sgadgil6/cnslab_fmri)
 
+MS-G3D - Liu et al 2020, [Disentangling and Unifying Graph Convolutions for Skeleton-Based Action Recognition](https://github.com/kenziyuliu/MS-G3D)
+
 ## Results
 
 ### Sex classification 
 
-**Multi-layer Perceptron** (MLP) classifier
+**Multi-layer Perceptron** (MLP) classifier 
 
 
 | Model | Data | Input Features | Architecture | Train-accuracy | Validation-accuracy | Remarks |
@@ -44,7 +46,7 @@ ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MR
 
 ------
 
-** Graph Convolution Networks** (GCN) classifiers
+**Graph Convolution Networks** (GCN) classifiers
 
 All results are obtained following a 5-fold cross validation
 
