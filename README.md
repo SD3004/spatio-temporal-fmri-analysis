@@ -46,6 +46,7 @@ ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MR
 
 ** Graph Convolution Networks** (GCN) classifiers
 
+All results are obtained following a 5-fold cross validation
 
 | Model | Data |  Accuracy % (paper)| Batch size | Iterations |Window size | Remarks |
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
