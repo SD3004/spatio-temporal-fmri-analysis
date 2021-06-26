@@ -82,15 +82,19 @@ All results are obtained following a 5-fold cross validation
 | MS-G3D   | Nodes TS - 15   | **59.1**  |  256 | 2k | 10 | Adam, 1e-3  |
 | MS-G3D   | Nodes TS - 15   | **80.0**  |  256 | 2k | 50 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 15   | **80.1**  |  256 | 2k | 75 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 15   | **x**   |  128 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 15   | **81.5**   |  128 | 2k | 100 | Adam, 1e-3  |
 |   |   |   |  |  || |   |
 | MS-G3D    | Nodes TS - 25       |  **84.5**  | 256 | 2k | 50 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 25       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **85.2**   | 128 | 2k | 75 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
 |   |   |   |  |  || |   |
-| MS-G3D    | Nodes TS - 25       |  **84.5**  | 256 | 2k | 50 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 25       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 25       |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **89.5**  | 256 | 2k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
+|   |   |   |  |  || |   |
+| MS-G3D    | Nodes TS - 100       |  **x**  | 256 | 2k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 100       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 100      |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
 
 
 
