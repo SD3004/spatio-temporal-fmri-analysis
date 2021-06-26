@@ -51,13 +51,43 @@ ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MR
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | ST-GCN | **22 ROIs**  | **0.752** | 5-folds average, SGD 1e-2 | xxx | xxx | xxx |
 | MS-G3D   | **22 ROIs**    |**0.847**  | dropout 0.5, Adam 1e-4 | xxx | xxx |xxx |
+
+| Model | Data |  Accuracy % (paper)| Batch size | Iterations |Window size | Remarks |
+| ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | ST-GCN   | Nodes TS - 15   | **79.8**  |  512 | 10k | 50 | Adam, 1e-3  |
+| ST-GCN   | Nodes TS - 15   | **75.9**  |  512 | 2k | 50 | Adam, 1e-3  |
+| ST-GCN   | Nodes TS - 15   | **76.7**  |  512 | 2k | 75 | Adam, 1e-3  |
+| ST-GCN   | Nodes TS - 15   | **76.6**  |  512 | 2k | 100 | Adam, 1e-3  |
+|   |   |   |  |  || |   |
 | ST-GCN   | Nodes TS - 25       | **82.1**  | 512 | 10k | 50 | Adam, 1e-3  |
-| ST-GCN   | Nodes TS - 50      | **0.961**  | same | xxx | xxx |xxx |
+| ST-GCN   | Nodes TS - 25       | **78.3**  | 512 | 2k | 50 | Adam, 1e-3  |
+| ST-GCN   | Nodes TS - 25       | **79.8**  | 512 | 2k | 75 | Adam, 1e-3  |
+| ST-GCN   | Nodes TS - 25       | **77.8**  | 512 | 2k | 100 | Adam, 1e-3  |
+|   |   |   |  |  || |   |
+| ST-GCN   | Nodes TS - 50      | **86.5**  | 512 | 10k | 50 |  Adam, 1e-3 |
+| ST-GCN   | Nodes TS - 50      | **82.4**  | 512 | 2k | 50 |  Adam, 1e-3 |
+| ST-GCN   | Nodes TS - 50      | **81.6**  | 512 | 2k | 75 |  Adam, 1e-3 |
+| ST-GCN   | Nodes TS - 50      | **79.6**  | 512 | 2k | 100 |  Adam, 1e-3 |
+|   |   |   |  |  || |   |
 | ST-GCN   | Nodes TS - 100      | **82.6**  | 256 | 2k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 200       | **89.2**  | 256 | 2k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 200       | **91.5**  | 256 | 10k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 300      | **87.2**  | 128 | 2k | 50 | Adam, 1e-3  |
+
+| Model | Data |  Accuracy % (paper)| Batch size | Iterations |Window size | Remarks |
+| ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
+| MS-G3D   | Nodes TS - 15   | **59.1**  |  256 | 2k | 10 | Adam, 1e-3  |
+| MS-G3D   | Nodes TS - 15   | **80.0**  |  256 | 2k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 15   | **80.1**  |  256 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 15   | **x**   |  128 | 2k | 100 | Adam, 1e-3  |
+|   |   |   |  |  || |   |
+| MS-G3D    | Nodes TS - 25       |  **84.5**  | 256 | 2k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
+
+
+
+
 
 
 
