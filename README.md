@@ -84,6 +84,10 @@ ST-GCN - Gadgil et al 2020, [Spatio-Temporal Graph Convolution for Functional MR
 | MS-G3D    | Nodes TS - 25       |  **84.5**  | 256 | 2k | 50 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
+|   |   |   |  |  || |   |
+| MS-G3D    | Nodes TS - 25       |  **84.5**  | 256 | 2k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
 
 
 
