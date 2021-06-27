@@ -55,7 +55,7 @@ All results are obtained following a 5-fold cross validation
 | ST-GCN | **22 ROIs**  | **0.752** | 5-folds average, SGD 1e-2 | xxx | xxx | xxx |
 | MS-G3D   | **22 ROIs**    |**0.847**  | dropout 0.5, Adam 1e-4 | xxx | xxx |xxx |
 
-| Model | Data |  Accuracy % (paper)| Batch size | Iterations |Window size | Remarks |
+| Model | Data |  Accuracy %| Batch size | Iterations |Window size | Remarks |
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | ST-GCN   | Nodes TS - 15   | **79.8**  |  512 | 10k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 15   | **75.9**  |  512 | 2k | 50 | Adam, 1e-3  |
@@ -77,24 +77,25 @@ All results are obtained following a 5-fold cross validation
 | ST-GCN   | Nodes TS - 200       | **91.5**  | 256 | 10k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 300      | **87.2**  | 128 | 2k | 50 | Adam, 1e-3  |
 
-| Model | Data |  Accuracy % (paper)| Batch size | Iterations |Window size | Remarks |
+| Model | Data |  Accuracy %| Batch size | Iterations |Window size | Remarks |
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | MS-G3D   | Nodes TS - 15   | **59.1**  |  256 | 2k | 10 | Adam, 1e-3  |
 | MS-G3D   | Nodes TS - 15   | **80.0**  |  256 | 2k | 50 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 15   | **80.1**  |  256 | 2k | 75 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 15   | **81.5**   |  128 | 2k | 100 | Adam, 1e-3  |
 |   |   |   |  |  || |   |
-| MS-G3D    | Nodes TS - 25       |  **84.5**  | 256 | 2k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **84.7**  | 256 | 2k | 50 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **85.2**   | 128 | 2k | 75 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **85.1**  | 128 | 2k | 100 | Adam, 1e-3  |
 |   |   |   |  |  || |   |
 | MS-G3D    | Nodes TS - 50       |  **89.5**  | 256 | 2k | 50 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 50       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 50       |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **89.3**   | 128 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **89.7**  | 128 | 2k | 100 | Adam, 1e-3  |
 |   |   |   |  |  || |   |
-| MS-G3D    | Nodes TS - 100       |  **x**  | 256 | 2k | 50 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 100       |  **x**   | 128 | 2k | 75 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 100      |  **x**  | 128 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 100       |  **92.2**  | 256 | 2k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 100       |  **x**  | 256 | 10k | 50 | Adam, 1e-3  |
+|   |   |   |  |  || |   |
+| MS-G3D-light    | Nodes TS - 200       |  **94.4**   | 128 | 2k | 50 | Adam, 1e-3, scale 1|
 
 
 
