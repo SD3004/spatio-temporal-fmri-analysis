@@ -54,7 +54,7 @@ All results are obtained following a 5-fold cross validation
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | ST-GCN | **22 ROIs**  | **81.8** (**83.7**) | 5-folds average, SGD 1e-2 | xxx | 128 | xxx |
 | MS-G3D   | **22 ROIs**    |**84.7**  | dropout 0.5, Adam 1e-4 | xxx | 50 |xxx |
-| MS-G3D   | **22 ROIs**    |**xx**  | dropout 0.0, Adam 1e-3 | 128 | 5k |scale 2, scale 2 |
+| MS-G3D   | **22 ROIs**    |**83.0**  | dropout 0.0, Adam 1e-3 | 128 | 5k |scale 2, scale 2 |
 
 
 | Model | Data |  Accuracy %| Batch size | Iterations | Time Window | Remarks |
