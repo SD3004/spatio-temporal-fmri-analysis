@@ -50,12 +50,14 @@ MS-G3D - Liu et al 2020, [Disentangling and Unifying Graph Convolutions for Skel
 
 All results are obtained following a 5-fold cross validation
 
-| Model | Data |  Accuracy % (paper)| Batch size | Iterations |Window size | Remarks |
+| Model | Data |  Accuracy % (paper)| Batch size | Iterations | Time Window | Remarks |
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
-| ST-GCN | **22 ROIs**  | **0.752** | 5-folds average, SGD 1e-2 | xxx | xxx | xxx |
-| MS-G3D   | **22 ROIs**    |**0.847**  | dropout 0.5, Adam 1e-4 | xxx | xxx |xxx |
+| ST-GCN | **22 ROIs**  | **81.8** (**83.7**) | 5-folds average, SGD 1e-2 | xxx | 128 | xxx |
+| MS-G3D   | **22 ROIs**    |**84.7**  | dropout 0.5, Adam 1e-4 | xxx | 50 |xxx |
+| MS-G3D   | **22 ROIs**    |**xx**  | dropout 0.0, Adam 1e-3 | 128 | 5k |scale 2, scale 2 |
 
-| Model | Data |  Accuracy %| Batch size | Iterations |Window size | Remarks |
+
+| Model | Data |  Accuracy %| Batch size | Iterations | Time Window | Remarks |
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | ST-GCN   | Nodes TS - 15   | **79.8**  |  512 | 10k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 15   | **75.9**  |  512 | 2k | 50 | Adam, 1e-3  |
@@ -66,6 +68,7 @@ All results are obtained following a 5-fold cross validation
 | ST-GCN   | Nodes TS - 25       | **78.3**  | 512 | 2k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 25       | **79.8**  | 512 | 2k | 75 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 25       | **77.8**  | 512 | 2k | 100 | Adam, 1e-3  |
+| ST-GCN   | Nodes TS - 25       | **76.5**  | 512 | 2k | 128 | Adam, 1e-3  |
 |   |   |   |  |  || |   |
 | ST-GCN   | Nodes TS - 50      | **86.5**  | 512 | 10k | 50 |  Adam, 1e-3 |
 | ST-GCN   | Nodes TS - 50      | **82.4**  | 512 | 2k | 50 |  Adam, 1e-3 |
@@ -77,7 +80,7 @@ All results are obtained following a 5-fold cross validation
 | ST-GCN   | Nodes TS - 200       | **91.5**  | 256 | 10k | 50 | Adam, 1e-3  |
 | ST-GCN   | Nodes TS - 300      | **87.2**  | 128 | 2k | 50 | Adam, 1e-3  |
 
-| Model | Data |  Accuracy %| Batch size | Iterations |Window size | Remarks |
+| Model | Data |  Accuracy %| Batch size | Iterations | Time Window | Remarks |
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | MS-G3D   | Nodes TS - 15   | **59.1**  |  256 | 2k | 10 | Adam, 1e-3  |
 | MS-G3D   | Nodes TS - 15   | **80.0**  |  256 | 2k | 50 | Adam, 1e-3  |
@@ -86,14 +89,20 @@ All results are obtained following a 5-fold cross validation
 |   |   |   |  |  || |   |
 | MS-G3D    | Nodes TS - 25       |  **84.7**  | 256 | 2k | 50 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **85.2**   | 128 | 2k | 75 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 25       |  **85.1**  | 128 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **85.1**  | 64 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **85.9**  | 64 | 2k | 128 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **84.3**  | 256 | 2k | 50 | Adam, 1e-3, scale g3d 4, scale gcn 4  |
+| MS-G3D    | Nodes TS - 25       |  **84.6**  | 256 | 2k | 50 | Adam, 1e-3, scale g3d 1, scale gcn 1  |
 |   |   |   |  |  || |   |
-| MS-G3D    | Nodes TS - 50       |  **89.5**  | 256 | 2k | 50 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 50       |  **89.3**   | 128 | 2k | 75 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 50       |  **89.7**  | 128 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **89.5**  | 64 | 2k | 50 | Adam, 1e-3, scale g3d 8, scale gcn 18 |
+| MS-G3D    | Nodes TS - 50       |  **89.3**   | 64 | 2k | 75 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **89.7**  | 32 | 2k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 50       |  **87.9**  | 64 | 2k | 50 | Adam, 1e-3, scale g3d 4, scale gcn 1  |
+| MS-G3D    | Nodes TS - 50       |  **89**  | 64 | 2k | 50 | Adam, 1e-3, scale g3d 1, scale gcn 1  |
+| MS-G3D    | Nodes TS - 50       |  **87.5**  | 64 | 2k | 50 | Adam, 1e-3, scale g3d 1, scale gcn 1 , ws=1|
 |   |   |   |  |  || |   |
 | MS-G3D    | Nodes TS - 100       |  **92.2**  | 256 | 2k | 50 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 100       |  **x**  | 256 | 10k | 50 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 100       |  **93.9**  | 32 | 10k | 50 | Adam, 1e-3  |
 |   |   |   |  |  || |   |
 | MS-G3D-light    | Nodes TS - 200       |  **94.4**   | 128 | 2k | 50 | Adam, 1e-3, scale 1|
 
