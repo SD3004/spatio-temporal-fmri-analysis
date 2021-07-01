@@ -129,9 +129,10 @@ All results are obtained following a 5-fold cross validation
 | Model | Data |  Correlation %| Batch size | Iterations | Time Window | Remarks |
 | ------ |  ----| --  | ----------|  ----------|   ----------| ----------|
 | MS-G3D   | Nodes TS - 25   | **30.6**  |  64 | 2k | 128 | Adam, 1e-3, scale 8  |
+| MS-G3D   | Nodes TS - 25   | **30.7**  |  256 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2  |
 |   |   |   |  |  || |   |
 | MS-G3D   | Nodes TS - 50   | **32.5**  |  64 | 2k | 50 | Adam, 1e-3, dropout 0.5, scale 8  |
-| MS-G3D   | Nodes TS - 50   | **x**  |  128 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2  |
+| MS-G3D   | Nodes TS - 50   | **30.7**  |  128 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2  |
 |   |   |   |  |  || |   |
 | MS-G3D   | Nodes TS - 100   | **31.7**  |  32 | 2k | 50 | Adam, 1e-3, scale 8 |
 | MS-G3D   | Nodes TS - 100   | **x**  |  64 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2 |
