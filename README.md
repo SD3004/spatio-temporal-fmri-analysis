@@ -145,6 +145,6 @@ All results are obtained following a 5-fold cross validation
 | MS-G3D   | Nodes TS - 100   | **31.7**  |  32 | 2k | 50 | Adam, 1e-3, scale 8 |
 | MS-G3D   | Nodes TS - 100   | **31.3**  |  64 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2 |
 |   |   |   |  |  || |   |
-| MS-G3D-light    | Nodes TS - 200       |  **xx**   | 16 | 2k | 50 | Adam, 1e-3, scale 1|
+| MS-G3D-light    | Nodes TS - 200       |  **32.4**   | 16 | 2k | 50 | Adam, 1e-3, scale 1|
 
 
