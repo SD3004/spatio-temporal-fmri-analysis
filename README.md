@@ -133,8 +133,9 @@ All results are obtained following a 5-fold cross validation
 | MS-G3D   | Nodes TS - 15   | **26.7**  |  512 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2  |
 |   |   |   |  |  || |   |
 | MS-G3D   | Nodes TS - 25   | **30.6**  |  64 | 2k | 128 | Adam, 1e-3, scale 8  |
-| MS-G3D   | Nodes TS - 25   | **31.3**  |  256 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2  |
+| MS-G3D   | Nodes TS - 25   | **xx**  |  128 | 2k | 100 | Adam, 1e-3, dropout 0, scale 2  |
 | MS-G3D   | Nodes TS - 25   | **28.0**  |  256 | 2k | 75 | Adam, 1e-3, dropout 0, scale 2  |
+| MS-G3D   | Nodes TS - 25   | **31.3**  |  256 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2  |
 |   |   |   |  |  || |   |
 | MS-G3D   | Nodes TS - 50   | **32.5**  |  64 | 2k | 50 | Adam, 1e-3, dropout 0.5, scale 8  |
 | MS-G3D   | Nodes TS - 50   | **30.7**  |  128 | 2k | 50 | Adam, 1e-3, dropout 0, scale 2  |
