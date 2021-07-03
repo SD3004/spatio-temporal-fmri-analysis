@@ -90,7 +90,7 @@ All results are obtained following a 5-fold cross validation
 | MS-G3D    | Nodes TS - 25       |  **84.7**  | 256 | 2k | 50 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **85.2**   | 128 | 2k | 75 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **85.1**  | 64 | 2k | 100 | Adam, 1e-3  |
-| MS-G3D    | Nodes TS - 25       |  **xxx**  | 64 | 10k | 100 | Adam, 1e-3  |
+| MS-G3D    | Nodes TS - 25       |  **86.1**  | 64 | 5k | 100 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **85.9**  | 64 | 2k | 128 | Adam, 1e-3  |
 | MS-G3D    | Nodes TS - 25       |  **84.3**  | 256 | 2k | 50 | Adam, 1e-3, scale g3d 4, scale gcn 4  |
 | MS-G3D    | Nodes TS - 25       |  **84.6**  | 256 | 2k | 50 | Adam, 1e-3, scale g3d 1, scale gcn 1  |
